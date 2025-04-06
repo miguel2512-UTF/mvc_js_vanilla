@@ -4,7 +4,7 @@ const view = new View()
 const routes = [
     {
         uri: "task",
-        html_path: "view/task.html"
+        html_path: "./view/task.html"
     }
 ]
 
