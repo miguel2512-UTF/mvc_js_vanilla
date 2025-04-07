@@ -11,13 +11,11 @@ class Controller {
     }
 
     initRoutes(model, view, routes) {
-        alert("hola!")
-
         routes.forEach(route => {
-            console.log(route.uri, route.html_path);
-
             if (this.urlPath == route.uri) {
-                this.view.render(route.html_path)
+                this.view.render(route.html_path, route.script_source)
+            } else {
+                
             }
         });
     }
